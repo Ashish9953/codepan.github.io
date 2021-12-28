@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Pan</title>
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="codemirror/lib/codemirror.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="left-menu-bar">
+        <div>
+          <img
+            src="images/logo.png"
+            alt=""
+            height="50"
+            width="50"
+            style="margin-top: 10px"
+          />
+        </div>
+        <!-- <div>
+        <h1 class="name-of-document" id="editor-name"></h1>
+        <img
+          src="images/pencil-svgrepo-com.svg"
+          alt=""
+          height="10"
+          width="10"
+        />
+      </div> -->
+      </div>
+      <div class="right-menu-bar">
+        <div class="save-box">
+          <button class="save-button" onclick="run()">Run</button>
+        </div>
+
+        <!-- <div class="view-box">
+        <button class="view-button">
+           <img src="images/leftsvg.png" alt="" class="view-icon" >
+          </svg>
+        </button>
+      </div> -->
+      </div>
+    </nav>
+    <div class="editor-box">
+      <div class="editors">
+        <h1 class="html-editor-header">
+          <i class="fab fa-html5 lang-icon">&nbsp;</i>HTML
+        </h1>
+        <div class="html-editor">
+          <!-- <h1 class="html-editor-header"><i class="fab fa-html5 lang-icon">&nbsp;</i>HTML</h1> -->
+
+          <textarea
+            class="text-area"
+            name=""
+            id="html-code"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <h1 class="css-editor-header">
+          <i class="fab fa-css3 lang-icon" aria-hidden="true">&nbsp;</i>CSS
+        </h1>
+        <div class="css-editor">
+          <!-- <h1 class="css-editor-header">
+            <i class="fab fa-css3 lang-icon" aria-hidden="true">&nbsp;</i>CSS
+          </h1> -->
+          <textarea
+            class="text-area"
+            name=""
+            id="css-code"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <h1 class="javascript-editor-header">
+          <i class="fab fa-js lang-icon"></i>&nbsp;JS
+        </h1>
+        <div class="javascript-editor">
+          <textarea
+            class="text-area"
+            name=""
+            id="javascript-code"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+      </div>
+      <div class="output">
+        <iframe id="output" class="iframe-output"></iframe>
+      </div>
+    </div>
+    <script src="codemirror/lib/codemirror.js"></script>
+    <script src="codemirror/addon/edit/closetag.js"></script>
+    <script src="codemirror/mode/xml/xml.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
